@@ -20,19 +20,30 @@
         <title>Delegacia da Thassi</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container"> 
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.jsp">Delegacia da Thassi</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="cadastroFichaPolicial.jsp">Cadastro</a></li>
+                            <li><a href="mvc?logica=listaMelianteRemoveLogica">Remove</a></li>
+                            <li><a href="mvc?logica=listaMeliantesLogica">Lista meliantes</a></li> 
+                            <li><a href="buscarPorNome.jsp">Busca por nome</a></li> 
+                            <li><a href="mvc?logica=listaForagidosLogica">Lista foragidos</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <div class="jumbotron">
                 <h1>Delegacia da Thassi</h1>
                 <p>Crimes e delitos</p>
             </div>
             <!--            <form action="cadastroFichaPolicial.jsp" method="POST">-->
             <form method="POST">
-                <a href ="cadastroFichaPolicial.jsp"><button type="button" class="btn btn-default btn-lg">
-                        Nova ficha</button></a>
-                <a href ="mvc?logica=listaMelianteRemoveLogica"><button type="button" class="btn btn-default btn-lg">
-                        Remove</button></a>
-                <a href ="mvc?logica=listaMeliantesLogica"><button type="button" class="btn btn-default btn-lg">
-                        Lista meliantes</button></a>
+
                 <a href ="buscarPorNome.jsp"><button type="button" class="btn btn-default btn-lg">
                         Buscar por nome</button></a>
                 <a href ="mvc?logica=listaForagidosLogica"><button type="button" class="btn btn-default btn-lg">
