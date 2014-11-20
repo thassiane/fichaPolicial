@@ -16,8 +16,24 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <title>Lista de Meliantes</title>
     </head>
-    <body>
+    <body>    
         <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.jsp">Delegacia da Thassi</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="cadastroFichaPolicial.jsp">Cadastro</a></li>
+                            <li><a href="mvc?logica=listaMelianteRemoveLogica">Remove</a></li>
+                            <li><a href="mvc?logica=listaMeliantesLogica">Lista meliantes</a></li> 
+                            <li><a href="buscarPorNome.jsp">Busca por nome</a></li> 
+                            <li><a href="mvc?logica=listaForagidosLogica">Lista foragidos</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <div class="jumbotron">
                 <h1>Delegacia da Thassi</h1>
                 <p>Crimes e delitos</p>
@@ -46,7 +62,7 @@
                             <c:forEach var ="meliante" items ="${meliantes}">
                                 <tr>  
                                     <td>${meliante.id}</td>
-                                   <td><img src=${meliante.foto} width="128" height="128"></td>
+                                    <td><img src=${meliante.foto} width="128" height="128"></td>
                                     <td>${meliante.nome}</td>
                                     <td>${meliante.cpf}</td>
                                     <td>${meliante.endereco}</td>
