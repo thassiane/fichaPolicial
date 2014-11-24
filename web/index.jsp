@@ -43,11 +43,6 @@
             </div>
             <!--            <form action="cadastroFichaPolicial.jsp" method="POST">-->
             <form method="POST">
-
-                <a href ="buscarPorNome.jsp"><button type="button" class="btn btn-default btn-lg">
-                        Buscar por nome</button></a>
-                <a href ="mvc?logica=listaForagidosLogica"><button type="button" class="btn btn-default btn-lg">
-                        Lista foragidos</button></a>
                 <!--<input type="submit" value="Nova ficha">-->  
             </form>
         </div>
